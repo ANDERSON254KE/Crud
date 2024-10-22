@@ -1,0 +1,15 @@
+{% extends "invApp/layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to CRUD Application</h1>
+        <p class="lead">Manage your products today</p>
+    </div>
+    <hr class="my-4">
+    <p class="text-center">
+        <a class="btn btn-primary btn-lg" href="{% url 'invApp:listings' %}" role="button">View Products</a>
+    </p>
+{% endblock %}

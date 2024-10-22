@@ -1,0 +1,13 @@
+<!-- it adds the template base from layout html -->
+{% extends "invApp/layout.html" %}
+
+{% block title%} Home {% endblock %}
+
+{% block content %}
+<h1 class="text-center">Product Form </h1>
+<form method="post" class="jumbo-tron">
+               {% csrf_token %}
+               {{form.as_p}}    
+                          <button type="submit" class="btn btn-success btn-block">Save product</button>
+</form>
+{% endblock %}
